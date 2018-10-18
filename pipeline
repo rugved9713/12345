@@ -1,0 +1,27 @@
+node
+{
+    stage('test')
+    {
+       checkout([$class: 'GitSCM', branches: [[name: '*/ci-cd-branch']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '36d2c06448a7a5758f3588070c15c11be35ac33a', url: 'https://github.com/mesosphere/dcos-nifi.git']]])
+    }
+    stage('create')
+    {
+        echo "Create a cluster"
+    }
+    stage('fetch')
+    {
+        echo "Fetch cluster address"
+    }
+    stage('build')
+    {
+        echo "Build a container"
+    }
+    stage('test')
+    {
+        echo "Run the test script"
+    }
+    stage('Delete')
+    {
+        echo "Delete the cluster"
+    }
+}
