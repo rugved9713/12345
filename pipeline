@@ -5,7 +5,6 @@ node
     {
         echo "Create a cluster"
         
-        source config 
         echo "Name=$nam" 
         echo "Surname=$sur" 
     }
