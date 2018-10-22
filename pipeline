@@ -4,6 +4,11 @@ node
     stage('create')
     {
         echo "Create a cluster"
+        
+        #!/bin/bash
+        source  12345/config 
+        echo "Name=$nam" >&2
+        echo "Surname=$sur" >&2
     }
     stage('fetch')
     {
