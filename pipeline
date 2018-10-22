@@ -5,8 +5,7 @@ node
     {
         echo "Create a cluster"
         
-        echo "Name=$nam" 
-        echo "Surname=$sur" 
+        
     }
     stage('fetch')
     {
