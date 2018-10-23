@@ -5,9 +5,13 @@ node
     {
         echo "Create a cluster"
         
-        source 12345/config
-        echo "Name=$nam"
-        echo "Surname=$sur"
+        
+
+def username = 'Jenkins'
+echo 'Hello Mr. ${username}'
+echo "I said, Hello Mr. ${username}"
+
+
 
         
     }
