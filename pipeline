@@ -4,11 +4,7 @@ node
     stage('create')
     {
         echo "Create a cluster"
-        
-        
-source  12345/config
-
-        
+      
     }
     stage('fetch')
     {
