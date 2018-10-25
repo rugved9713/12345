@@ -14,10 +14,7 @@ node
     {
         echo "Build a container"
     }
- }
  
- node
- {
     stage('test')
     {
         echo "Run the test script"
