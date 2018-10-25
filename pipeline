@@ -4,10 +4,7 @@ node
     stage('create')
     {
         echo "Create a cluster"
-        
-        aws cloudformation describe-stacks,
-        stack-name miniocluster111,
-        region us-east-1      
+            
     }
     stage('fetch')
     {
@@ -17,6 +14,10 @@ node
     {
         echo "Build a container"
     }
+ }
+ 
+ node
+ {
     stage('test')
     {
         echo "Run the test script"
