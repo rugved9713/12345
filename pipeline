@@ -7,7 +7,7 @@ node
         
         deploy:
   steps:
-    - aws-cloudformation:
+    - aws-cloudformation
         action: "describe-stacks"
         stack-name: "miniocluster110"
         region: "us-east-1"
