@@ -4,8 +4,17 @@ node
     stage('create')
     {
         echo "Create a cluster"
-            
+        
+        deploy:
+  steps:
+    - aws-cloudformation:
+        action: "describe-stacks"
+        stack-name: "miniocluster110"
+        region: "us-east-1"
+        
     }
+    
+
     stage('fetch')
     {
         echo "Fetch cluster address"
