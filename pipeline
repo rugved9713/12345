@@ -4,8 +4,9 @@ node
     stage('create')
     {
         echo "Create a cluster"
-        aws cloudformation describe-stacks 
-        stack-name miniocluster111 
+        
+        aws cloudformation describe-stacks,
+        stack-name miniocluster111,
         region us-east-1      
     }
     stage('fetch')
