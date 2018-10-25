@@ -4,6 +4,7 @@ node
     stage('create')
     {
         echo "Create a cluster"
+        aws cloudformation create-stack --stack-name nificluster1110 --template-body https://s3.eu-central-1.amazonaws.com/ashu-cluster-template/1.10_permissive.json --capabilities CAPABILITY_IAM --region us-east-1 --parameters ParameterKey=KeyName,ParameterValue=northvirginia ParameterKey=SlaveInstanceCount,ParameterValue=7
       
     }
     stage('fetch')
