@@ -5,12 +5,7 @@ node
     {
         echo "Create a cluster"
         
-        deploy:
-  steps:
-    - aws-cloudformation
-        action: "describe-stacks"
-        stack-name: "miniocluster110"
-        region: "us-east-1"
+        ls -la
         
     }
     
