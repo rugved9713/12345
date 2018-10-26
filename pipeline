@@ -5,7 +5,7 @@ node
     {
         echo "Create a cluster"
         
-        ls -la
+        pwd
         
     }
     
