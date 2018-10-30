@@ -1,3 +1,11 @@
+node('a-node')
+{
+  stage('check')
+  {
+    mkdir amol
+    echo "check status"
+  }
+}
 node
 {
   
