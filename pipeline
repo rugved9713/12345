@@ -1,6 +1,7 @@
 node('a-node')
 {
   stage('check')
+  cd /home/ec2-user/new1
   sh 'ls -l'
     dir ('foo') {
         writeFile file:'dummy', text:''
