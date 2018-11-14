@@ -1,0 +1,12 @@
+node
+{
+    stage('test')
+    {
+        echo "Run the test script"
+    }
+    
+    stage('Delete')
+    {
+        echo "Delete the cluster"
+    }
+}
