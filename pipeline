@@ -4,16 +4,13 @@ node
     stage('create')
     {
         echo "Create a cluster"
-        
-        pwd
-        
     }
     
-
     stage('fetch')
     {
         echo "Fetch cluster address"
     }
+
     stage('build')
     {
         echo "Build a container"
@@ -23,6 +20,7 @@ node
     {
         echo "Run the test script"
     }
+    
     stage('Delete')
     {
         echo "Delete the cluster"
