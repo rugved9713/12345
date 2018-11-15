@@ -4,8 +4,7 @@ node
     stage('create')
     {
         echo "Create a cluster"
-        pwd
-        ls
+        def workspace = pwd()
     }
     
     stage('fetch')
