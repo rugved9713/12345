@@ -1,9 +1,13 @@
 node
 {
+pwd
+ls
   
     stage('create')
     {
         echo "Create a cluster"
+        pwd
+        ls
     }
     
     stage('fetch')
