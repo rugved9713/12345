@@ -1,7 +1,5 @@
 node
 {
-pwd
-ls
   
     stage('create')
     {
