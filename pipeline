@@ -5,8 +5,8 @@ node
     {
         echo "Create a cluster"
         checkout scm
-          stage "Build Pex"
-          dir ('/home/ec2-user') { 
+          
+          dir ('/home/ec2-user/build') { 
           sh('build.sh')
 }
         
