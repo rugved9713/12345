@@ -4,7 +4,7 @@ node
     stage('create')
     {
         echo "Create a cluster"
-        checkout scm
+        
           
           dir ('/home/ec2-user/build') { 
           sh('build.sh')
