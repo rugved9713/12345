@@ -6,7 +6,7 @@ node
         echo "Create a cluster"
         
           
-          dir ('/home/ec2-user/build') { 
+          dir ('/home/ec2-user/build/') { 
           sh('build.sh')
 }
         
